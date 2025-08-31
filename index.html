@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PSYCHO</title>
+  <meta name="description" content="A crisp white, meme-forward landing: crypto traders are basically PSYCHO.">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav>
+    <div class="inner">
+      <div class="logo">
+        <img src="assets/favicon.png" alt="psycho icon">
+        <span>PSYCHO</span>
+      </div>
+      <button id="nav-toggle" aria-label="Toggle menu" aria-expanded="false" class="btn small" style="display:none">Menu</button>
+      <ul id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#manifesto">Manifesto</a></li>
+        <li><a href="#copypasta">Copypasta</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="hero container">
+    <div>
+      <h1 class="glitch" data-text="CRYPTO TRADER = PSYCHO">CRYPTO TRADER = PSYCHO</h1>
+      <p class="small" style="max-width:60ch;margin-top:8px;">
+        Markets are irrational. So are we. The grin survives every dip.
+        Hover for glitch; click anywhere for tiny 'haha' bubbles. Minimal color, maximal energy.
+      </p>
+      <div class="mini-psycho" style="margin:12px 0 0 0;display:flex;gap:12px;align-items:center;">
+        <img src="assets/psycho.png" alt="psycho" style="max-width:260px;width:100%;height:auto;border:2px solid var(--border);border-radius:14px;">
+      </div>
+
+      <div class="marquee" style="margin-top:14px">
+        <span>BUY HIGH • SELL HIGHER • IT'S JUST A WICK • 100x… TRUST ME BRO • DIAMOND SMILES • </span>
+        <span>BUY HIGH • SELL HIGHER • IT'S JUST A WICK • 100x… TRUST ME BRO • DIAMOND SMILES • </span>
+      </div>
+      <div style="margin-top:18px;display:flex;gap:12px;flex-wrap:wrap">
+        <a class="btn" href="#copypasta">Open Copypasta</a>
+        <a class="btn" href="#manifesto">Read Manifesto</a>
+      </div>
+      <div style="display:block;margin-top:8px">
+        <div class="small" style="display:flex;gap:10px;align-items:center;flex-wrap:wrap">
+          <span style="border:2px solid var(--border);border-radius:10px;padding:6px 10px;display:inline-flex;gap:6px;align-items:center"><span>CA:</span> <code id="ca" style="border:none;padding:0">0x000000000000000000000000000000000000dEaD</code></span>
+          <button class="btn small" data-copy="#ca">Copy CA</button>
+          <a class="btn small" href="https://x.com" target="_blank" rel="noopener" aria-label="X (Twitter)">X</a>
+        </div>
+      </div>
+
+    </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section id="about" class="section container">
+    <div class="kicker">About</div>
+    <h2>What is PSYCHO?</h2>
+    <div class="quote">
+      <p id="about-text">That's You.</p>
+    </div>
+    <p class="small" style="margin-top:14px">
+    </p>
+  </section>
+
+  <section id="manifesto" class="section container">
+    <div class="kicker">Manifesto</div>
+    <h2>We are all PSYCHO (on the chart)</h2>
+    <ul class="small">
+      <li>−60%? A backtest.</li>
+      <li>Sleep is a dip; screens are the pump.</li>
+      <li>If it pumps — skill. If it dumps — RUG.</li>
+      <li>Minimal charts, maximal conviction.</li>
+      <li>Risk management is real. So is the grin.</li>
+    </ul>
+    <div class="quote" style="margin-top:10px">
+      <p id="rules">Rule #1: Act like a psycho.<br>Rule #2: See Rule #1.</p>
+      <button class="btn small" data-copy="#rules">Copy</button>
+    </div>
+  </section>
+
+  <section id="copypasta" class="section container">
+    <div class="kicker">Copypasta</div>
+    <h2>Post something mildly concerning</h2>
+    <input id="paste-input" type="text" placeholder='e.g., "This is not a top."'>
+    <div style="margin-top:10px;display:flex;gap:10px;align-items:center">
+      <button class="btn" id="gen">Generate</button>
+      <button class="btn small" data-copy="#paste-output">Copy</button>
+    </div>
+    <pre id="paste-output" class="quote" style="margin-top:14px;white-space:pre-wrap"></pre>
+  </section>
+
+  <footer class="container">
+    <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap">
+      <span class="badge">CRYPTO TRADER=PSYCHO <span class="small"></span></span>
+      <span class="copy">© 2025 PSYCHO.</span>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
