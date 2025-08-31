@@ -1,0 +1,16 @@
+
+/* === Mobile-only safeguards (<=768px) === */
+@media (max-width: 768px){
+  html, body{max-width:100%; overflow-x:hidden}
+  img, svg, video, canvas{max-width:100%; height:auto; display:block}
+  table{display:block; width:100%; overflow-x:auto; -webkit-overflow-scrolling:touch}
+  pre, code{white-space:pre-wrap; word-break:break-word}
+  .btn, button, a[role="button"]{min-height:44px}
+  /* common layout grids that may overflow */
+  [class*="row"], [class*="grid"], [class*="container"]{padding-left:16px; padding-right:16px}
+}
+/* Global guard against stray overflow */
+html, body{overflow-x:hidden}
+
+/* Force marquee scroll always */
+.marquee span{animation:scroll 15s linear infinite !important}
